@@ -1,11 +1,64 @@
+body {
+background: radial-gradient(circle at 10% 20%, rgb(251, 221, 19) 0.1%, rgb(255, 153, 1) 90%);
+}
+
 h1 {
     text-align: center;
+    font-family: sans-serif;
+    font-size: 36px;
+}
+h2 {
+    margin: 0 0 10px;
+    font-size: 28px;
+
+}
+
+select {
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 18px;
 }
 
 footer {
     text-align: center;
+    font: 18px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.date {
+    opacity: 0.7;
 }
 
 .container {
-    text-align: center;
+    border-radius: 20px;
+    max-width: 60%;
+    margin: 60px 60px;
+    background: white;
+    padding: 40px;
+    box-shadow: 0 29px 52px rgba(0, 0, 0, 0.40), 0 25px 16px rgba(0, 0, 0, 0.20);
+    
+}
+
+.city {
+   display: flex; 
+   margin: 10px 0;
+justify-content: space-between;
+border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+padding: 30px 0;
+}
+
+.city:last-child {
+    border: none;
+}
+
+.time {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.time small {
+    font-size: 24px;
+    line-height: 48px;
+    vertical-align: middle;
 }
