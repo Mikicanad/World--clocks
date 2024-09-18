@@ -1,6 +1,6 @@
 function updateTime() {
 let newYorkElement = document.querySelector("#new-york");
-if (newYorkDateElement) {
+if (newYorkElement) {
 let newYorkDateElement = newYorkElement.querySelector(".date");
 let newYorkTimeElement = newYorkElement.querySelector(".time");
 let newYorkTime = moment().tz("America/New_York");
