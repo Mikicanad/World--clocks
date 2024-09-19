@@ -26,13 +26,13 @@ let cityInterval;
 function updateCity(event) {
     clearInterval(cityInterval);
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
 
   function updateCityTime() {
   let cityTime = moment().tz(cityTimeZone);
-  if(cityTimeZone === 'current') {
-        cityTimeZone = moment.tz.guess();
-    }
   let citiesElement = document.querySelector("#cities");
   citiesElement.innerHTML = `
   <div class="city">
