@@ -1,6 +1,6 @@
 function updateTime() {
 let newYorkElement = document.querySelector("#new-york");
-if (newYorkElement) {
+if(newYorkElement) {
 let newYorkDateElement = newYorkElement.querySelector(".date");
 let newYorkTimeElement = newYorkElement.querySelector(".time");
 let newYorkTime = moment().tz("America/New_York");
@@ -11,7 +11,7 @@ newYorkTimeElement.innerHTML =newYorkTime.format("h:mm:ss [<small>]A[</small>]")
 }
 
 let torontoElement = document.querySelector("#toronto");
-if (torontoElement) {
+if(torontoElement) {
 let torontoDateElement = torontoElement.querySelector(".date");
 let torontoTimeElement = torontoElement.querySelector(".time");
 let torontoTime = moment().tz("America/Toronto");
@@ -30,6 +30,9 @@ function updateCity(event) {
 
   function updateCityTime() {
   let cityTime = moment().tz(cityTimeZone);
+  if(cityTimeZone === 'current') {
+        cityTimeZone = moment.tz.guess();
+    }
   let citiesElement = document.querySelector("#cities");
   citiesElement.innerHTML = `
   <div class="city">
