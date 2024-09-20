@@ -148,7 +148,7 @@ strong {
 
 @container (min-width: 300px) {
     .container {
-        padding: 15px;
+        padding: 20px;
         margin: 20px;
     }
 
