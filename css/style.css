@@ -157,15 +157,15 @@ strong {
         }
 
     h2 {
-        font-size: 8px;
+        font-size: 6px;
     }
 
     .time {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .time small {
-        font-size: 6px;
+        font-size: 4px;
         vertical-align: bottom;
     }
 
