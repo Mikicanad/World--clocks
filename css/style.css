@@ -166,6 +166,7 @@ strong {
 
     .time small {
         font-size: 6px;
+        vertical-align: bottom;
     }
 
     .city {
