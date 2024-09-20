@@ -27,7 +27,7 @@ select {
     display: block;
     width: 100%;
     border-radius: 1rem;
-    padding: 11px;
+    padding: 10px;
     font-size: 16px;
     margin-bottom: 20px;
     border: 2px solid #6dc0deb7;
@@ -122,6 +122,7 @@ strong {
     
 }
 
+
 .city {
     display: flex;
     margin: 10px 0;
@@ -145,22 +146,22 @@ strong {
     vertical-align: middle;
 }
 
-@container (min-width: 400px) {
+@container (min-width: 300px) {
     .container {
         padding: 15px;
         margin: 20px;
     }
 
         h1 {
-            font-size: 24px;
+            font-size: 20px;
         }
 
     h2 {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .time {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .time small {
