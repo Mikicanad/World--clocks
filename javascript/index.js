@@ -10,15 +10,37 @@ newYorkDateElement.innerHTML = newYorkTime.format("MMMM Do YYYY");
 newYorkTimeElement.innerHTML =newYorkTime.format("h:mm:ss [<small>]A[</small>]");
 }
 
-let torontoElement = document.querySelector("#toronto");
-if(torontoElement) {
-let torontoDateElement = torontoElement.querySelector(".date");
-let torontoTimeElement = torontoElement.querySelector(".time");
-let torontoTime = moment().tz("America/Toronto");
+let vancouverElement = document.querySelector("#vancouver");
+if(vancouverElement) {
+let vancouverDateElement = vancouverElement.querySelector(".date");
+let vancouverTimeElement = vancouverElement.querySelector(".time");
+let vancouverTime = moment().tz("America/Vancouver");
 
-torontoDateElement.innerHTML = torontoTime.format("MMMM Do YYYY");
-torontoTimeElement.innerHTML =torontoTime.format("h:mm:ss [<small>]A[</small>]");
+vancouverDateElement.innerHTML = vancouverTime.format("MMMM Do YYYY");
+vancouverTimeElement.innerHTML =vancouverTime.format("h:mm:ss [<small>]A[</small>]");
 }
+
+let tokyoElement = document.querySelector("#tokyo");
+if(tokyoElement) {
+let tokyoDateElement = tokyoElement.querySelector(".date");
+let tokyoTimeElement = tokyoElement.querySelector(".time");
+let tokyoTime = moment().tz("Asia/Tokyo");
+
+tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do YYYY");
+tokyoTimeElement.innerHTML =tokyoTime.format("h:mm:ss [<small>]A[</small>]");
+}
+
+let parisElement = document.querySelector("#paris");
+if(parisElement) {
+let parisDateElement = parisElement.querySelector(".date");
+let parisTimeElement = parisElement.querySelector(".time");
+let parisTime = moment().tz("Europe/Paris");
+
+parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
+parisTimeElement.innerHTML =parisTime.format("h:mm:ss [<small>]A[</small>]");
+}
+
+
 
 }
 let cityInterval;
@@ -44,7 +66,7 @@ function updateCity(event) {
     "A"
   )}</small></div>
   </div>
-  <a href="index.html">All Cities</a>
+  <a href="index.html">🌏 All Cities</a>
   `;
 
 }
